@@ -1,6 +1,6 @@
 @font-face {
   font-family: firago;
-  src: url(/fonts/FiraGO-Regular.ttf);
+  src: url(/font/FiraGO-Regular.ttf);
 }
 
 * {
@@ -37,7 +37,6 @@ body {
 }
 
 .main a {
-  font-family: Mont-DEMO;
   font-size: 14px;
   font-weight: 700;
   font-stretch: normal;
