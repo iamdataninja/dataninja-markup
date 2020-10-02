@@ -26,7 +26,6 @@ body {
     /* height: 17%; */
     height: 148px;
     width: 100%;
-    min-height: 74px;
 }
 .header-top {
     height: 50%;
@@ -195,35 +194,50 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
     background-color: #f1f5f8;
 }
 .content-left {
     width: 50%;
-    position: relative;
+    padding: 32px;
+    padding-right: 16px;
 }
 .column {
-    width: 85%;
-    margin: 13% auto;
-    height: 85%;
-    max-width: 490px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
-.content-style {
-    width: 100%;
-    height: 22%;
-    min-height: 154px;
+.block-style {
+    display: flex;
+    flex-direction: column;
+}
+.block-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.texts {
+    font-family: FiraGO;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.view-website {
+    color:  #ff4e00;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.content-style { 
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 48px;
 }
 .total-num {
-    width: 100%;
-    height: 60%;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgb(211, 211, 205);
@@ -232,36 +246,30 @@ body {
     margin: 0;
     font-family: FiraGO;
     font-size: 34px;
-    font-weight: normal;
-    letter-spacing: normal;
     color: #32495e;
-    margin-left: 12px;
-    margin-top: 12px;
+    padding: 20px 0 0 20px;
 }
 .txt-total-p {
     margin: 0;
-    margin-left: 12px;
     font-family: FiraGO;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     color: #7c899d;
-    }
+    padding: 0 0 20px 24px;
+}
 .data-total {
-    height: 40%;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 .data {
     width: 27%;
-    height: 25%;
-    margin-top: 4%;
-    margin-left: 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 20px 0 20px 20px;
 }
 .circle {
     width: 8px;
@@ -297,34 +305,32 @@ body {
 }
 .ninja {
     width: 30%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 16px;
 }
 .img-ninja {
     width: 75px;
-    height: 63px;
+    height: 60px;
 }
 .txt-ninja {
-    width: 70%;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 40px 40px 40px 0;
 }
 .row {
     flex-direction: row;
 }
 .white-belt {
     width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 .more-ads {
     width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -346,7 +352,6 @@ div.white-belt p:nth-child(2) {
 }
 .create-ads {
     width: 35%;
-    height: 40%;
     border-radius: 20px;
     background-color: #bddbff;
     display: flex;
@@ -371,7 +376,6 @@ div.white-belt p:nth-child(2) {
 }
 .status div {
     width: 14%;
-    height: 100%;
     background-color: #ffffff;
     border-right: 1px solid #2c7df0;
 }
@@ -380,12 +384,10 @@ div.status :first-child {
 }
 div.status :last-child {
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 .filter-by {
-    width: 130px;
-    height: 38px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: solid 1px #afafaf;
     font-family: FiraGO;
     font-size: 12px;
@@ -393,7 +395,7 @@ div.status :last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 16px;
+    padding: 16px;
 }
 .filter-by select {
     border: none;
@@ -401,24 +403,28 @@ div.status :last-child {
     font-size: 10px;
 }
 .filter-first-row {
-    width: 100%;
-    height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom:  solid 1px #e5e5e5;
+    padding: 16px 0 16px 16px;
 }
 div.filter-first-row :nth-child(2) {
     font-family: FiraGO;
     font-size: 14px;
     font-weight: 800;
     color: #2c7df0;
-    margin-right: 16px;
+    padding: 20px;
+}
+.filter-stats :nth-child(3) {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 .drafts-second-row {
     width: 100%;
-    height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -432,80 +438,55 @@ div.filter-first-row :nth-child(2) {
     border-bottom: none;
 }
 .brand-name {
-    width: 48%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 12px;
 }
-
-
 .brand {
     width: 25px;
     height: 25px;
     border-radius: 22px;
     border: solid 1px #d8d8d8;
+    padding: 4px;
     margin-right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .drafts-second-row :nth-child(3) {
     text-decoration: underline;
-    margin-right: 12px;
+    padding: 12px;
 }
-
+.network {
+    width: 20%;
+    padding: 12px;
+}
 .content-right {
     width: 50%;
-    position: relative;
+    padding: 32px;
+    padding-left: 16px;
 }
 .content-style-right {
     width: 100%;
-    height: 40%;
     background-color: #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     border-radius: 6px;
+    margin-bottom: 64px;
 }
-.top-good {
-    height: 28%;
-}
-.filter-stats {
-    width: 100%;
-    height: 18%;
-}
+
 .filter-stats :nth-child(3) {
     text-decoration: none;
 }
 .percentage {
-    width: 33px;
-    height: 19px;
     border-radius: 30px;
     background-color: #91c716;
     margin-left: 16px;
     margin-right: 16px;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
     font-size: 11px;
-    align-items: center;
+    padding: 4px 8px 4px 8px;
 }
 .red {
     background-color: #eb2f20;
-}
-.texts {
-    font-family: FiraGO;
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-}
-.total-data {
-    position: absolute;
-    margin-left: 8%;
-    margin-top: 7%;
-}
-.your-stats {
-    position: absolute;
-    margin-left: 8%;
-    margin-top: 50%;
 }
 .drafts {
     position: absolute;
@@ -516,13 +497,4 @@ div.filter-first-row :nth-child(2) {
     position: absolute;
     margin-left: 8%;
     margin-top: 75%;
-}
-.view-website {
-    position: absolute;
-    margin-left: 70%;
-    margin-top: 7%;
-    float: right;
-    color:  #ff4e00;
-    text-decoration: underline;
-    font-size: 12px;
 }
